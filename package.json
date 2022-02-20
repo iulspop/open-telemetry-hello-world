@@ -1,0 +1,23 @@
+{
+  "name": "checkin-app-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:tel:honeycomb": "node -r ./honeycomb-tracing.js src/index.js ",
+    "start:tel:basic": "node -r ./basic-tracing.js src/index.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.5",
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.27.3",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.27.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.27.0",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "express": "^4.17.2"
+  }
+}
