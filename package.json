@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "start:tel:honeycomb": "node -r ./honeycomb-tracing.js src/index.js ",
-    "start:tel:basic": "node -r ./basic-tracing.js src/index.js "
+    "start:telemetry:honeycomb": "node -r ./honeycomb-tracing.js src/index.js ",
+    "start:telemetry:basic": "node -r ./basic-tracing.js src/index.js "
   },
   "keywords": [],
   "author": "",
